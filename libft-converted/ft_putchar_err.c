@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   ft_putchar_err.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:10:36 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/10 12:18:20 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/10 12:19:05 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	ft_isascii(int c)
+void	ft_putchar_err(char c)
 {
-	if (c >= 0 && c <= 127)
-		return (TRUE);
-	return (FALSE);
+	ft_putchar_fd(2, c);
 }

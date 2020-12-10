@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   is_whitespace.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:10:36 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/09/28 14:37:20 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/09 13:02:01 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	ft_isascii(int c)
+t_bool		is_whitespace(char c)
 {
-	if (c >= 0 && c <= 127)
+	if (c >= 9 && c <= 13)
 		return (TRUE);
-	return (FALSE);
+	return (is_space(c));
 }

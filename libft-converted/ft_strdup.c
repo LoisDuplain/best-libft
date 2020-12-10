@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:10:36 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/09 16:56:35 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/09 16:57:53 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	ft_isascii(int c)
+char	*ft_strdup(const char *str)
 {
-	if (c >= 0 && c <= 127)
-		return (TRUE);
-	return (FALSE);
+	if (!str)
+		return (NULL);
+	return (ft_strndup(str, ft_strlen(str)));
 }

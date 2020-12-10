@@ -64,6 +64,14 @@ echo "\033[1;36m"
 make fclean
 echo " "
 echo " "
+
+echo "\033[1;37m-----------------------"
+echo "\033[36mConverting"
+echo "\033[1;37m-----------------------"
+echo "\033[1;36m"
+make convert
+echo " "
+echo " "
 echo "\033[1;37m-----------------------"
 echo "\033[1;31mPrepared to be pushed"
 echo "\033[1;37m-----------------------"

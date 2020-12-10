@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   is_lowercase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:10:36 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/09/28 14:42:16 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/09 13:04:05 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	ft_isascii(int c)
+t_bool		is_lowercase(char c)
 {
-	if (c >= 0 && c <= 127)
+	if (c >= 'a' && c <= 'z')
 		return (TRUE);
 	return (FALSE);
 }

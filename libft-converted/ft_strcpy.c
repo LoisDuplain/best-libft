@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:10:36 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/09 16:15:02 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/09 18:00:12 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	ft_isascii(int c)
+size_t	ft_strcpy(const char *source, char *destination)
 {
-	if (c >= 0 && c <= 127)
-		return (TRUE);
-	return (FALSE);
+	size_t	source_length;
+	size_t	index;
+
+	if (!destination || !source)
+		return (0);
+	source_length = ft_strlen(source);
+	index = 0;
+	while (index < source_length)
+	{
+		destination[index] = source[index];
+		index++;
+	}
+	destination[index] = 0;
+	return (source_length);
 }
