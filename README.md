@@ -47,6 +47,14 @@ int     main(void)
 }
 ```
 
+You can find description usage for every functions in the headers.
+
+## To add
+
+1.	List functions
+2.	Read next line auto free readed line
+3.	ft_substr.c
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
