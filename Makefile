@@ -6,7 +6,7 @@
 #    By: lduplain <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/27 18:12:13 by dburgun           #+#    #+#              #
-#    Updated: 2020/12/10 12:29:14 by lduplain         ###   ########lyon.fr    #
+#    Updated: 2020/12/10 13:28:15 by lduplain         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ RM			=	rm -f
 	$(GCC) $(FLAGS) -I $(INCLUDES) -c $< -o $(<:.c=.o)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	ar rc $(NAME) $(OBJS)
 
 all: $(NAME)
 
