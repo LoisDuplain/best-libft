@@ -35,10 +35,10 @@ norminette: clean
 test: $(NAME)
 	@echo "----- MAKEFILE TESTS -----"
 	
-convert:
-	./scripts/convert.sh
+export:
+	./scripts/export.sh
 
 end:
 	./scripts/end.sh
 
-.PHONY: all clean fclean re gmk norminette test convert end
+.PHONY: all clean fclean re gmk norminette test export end
