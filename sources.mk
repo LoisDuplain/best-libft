@@ -27,6 +27,7 @@ SRCS += sources/file/ft_open_file.c
 SRCS += sources/file/ft_read_next_line.c
 SRCS += sources/memory/ft_bzero.c
 SRCS += sources/memory/ft_calloc.c
+SRCS += sources/memory/ft_freeclear.c
 SRCS += sources/memory/ft_memset.c
 SRCS += sources/strings/ft_append_strs.c
 SRCS += sources/strings/ft_contains_char.c

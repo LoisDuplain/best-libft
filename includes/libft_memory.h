@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 15:59:37 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 16:10:06 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/13 16:59:50 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,13 @@ void	ft_bzero(void *s, size_t n);
 **	quantity mallocated of type_size bytes.
 */
 void	*ft_calloc(size_t quantity, size_t type_size);
+
+/*
+**	Free and set to null a pointer.
+**	./memory/ft_freeclear.c
+**	Return:
+**	TRUE if successfull.
+*/
+t_bool	ft_freeclear(void *variable);
 
 #endif

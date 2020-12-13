@@ -6,14 +6,11 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:24:44 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:26:01 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/13 17:51:53 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// TODO Simplifier les deux static grace aux strndup, strdup, ft_find_char
-// TODO Free la line auto dans ft_read_next_line
 
 static char		*get_first_line_part(char *source)
 {
@@ -55,8 +52,7 @@ static char		*get_second_line_part(char *source)
 		j++;
 	}
 	result[j] = 0;
-	free(source);
-	source = 0;
+	ft_freeclear(source);
 	return (result);
 }
 
@@ -75,13 +71,13 @@ t_read_status	ft_read_next_line(t_file *file)
 		buffer[read_result] = '\0';
 		file->p_backup = ft_append_strs(file->p_backup, buffer, TRUE, FALSE);
 	}
+	if (file->readed_line)
+		ft_freeclear(file->readed_line);
 	file->readed_line = get_first_line_part(file->p_backup);
 	if (read_result == 0)
-	{
-		free(file->p_backup);
-		file->p_backup = 0;
+		ft_freeclear(file->p_backup);
+	if (read_result == 0)
 		return (read_success_eof);
-	}
 	file->p_backup = get_second_line_part(file->p_backup);
 	return (read_success);
 }

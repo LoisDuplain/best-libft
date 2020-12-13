@@ -66,10 +66,10 @@ echo " "
 echo " "
 
 echo "\033[1;37m-----------------------"
-echo "\033[36mConverting"
+echo "\033[36mExporting"
 echo "\033[1;37m-----------------------"
 echo "\033[1;36m"
-make convert
+make export
 echo " "
 echo " "
 echo "\033[1;37m-----------------------"
