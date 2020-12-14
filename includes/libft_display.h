@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:30:22 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:22:26 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/14 14:04:26 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,41 @@ void	ft_putstr_err(char *str);
 **	./display/ft_putstr_errnl.c
 */
 void	ft_putstr_errnl(char *str);
+
+/*
+**	Print positive number on file descriptor fd.
+**	./display/ft_putnbr_pos_fd.c
+*/
+void	ft_putnbr_pos_fd(int fd, unsigned long long number);
+
+/*
+**	Print positive number on file descriptor fd followed by a new line.
+**	./display/ft_putnbr_pos_fdnl.c
+*/
+void	ft_putnbr_pos_fdnl(int fd, unsigned long long number);
+
+/*
+**	Print positive number on standard output.
+**	./display/ft_putnbr_pos.c
+*/
+void	ft_putnbr_pos(unsigned long long number);
+
+/*
+**	Print positive number on standard output followed by a new line.
+**	./display/ft_putnbr_pos_nl.c
+*/
+void	ft_putnbr_pos_nl(unsigned long long number);
+
+/*
+**	Print positive number on error output.
+**	./display/ft_putnbr_pos_err.c
+*/
+void	ft_putnbr_pos_err(unsigned long long number);
+
+/*
+**	Print positive number on error output followed by a new line.
+**	./display/ft_putnbr_pos_errnl.c
+*/
+void	ft_putnbr_pos_errnl(unsigned long long number);
 
 #endif
