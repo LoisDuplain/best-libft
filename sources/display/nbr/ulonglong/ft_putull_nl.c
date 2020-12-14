@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_pos_errnl.c                              :+:      :+:    :+:   */
+/*   ft_putull_nl.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/14 14:03:00 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/14 14:03:34 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/14 13:56:08 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/14 14:38:39 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_pos_errnl(unsigned long long number)
+void	ft_putull_nl(unsigned long long number)
 {
-	ft_putnbr_pos_fdnl(2, number);
+	ft_putull_fdnl(1, number);
 }

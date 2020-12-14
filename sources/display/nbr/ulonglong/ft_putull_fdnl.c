@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_pos_fd.c                                 :+:      :+:    :+:   */
+/*   ft_putull_fdnl.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/14 13:25:12 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/14 13:47:50 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/14 13:50:02 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/14 14:36:42 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_pos_fd(int fd, unsigned long long number)
+void	ft_putull_fdnl(int fd, unsigned long long number)
 {
-	if (number / 10 > 0)
-		ft_putnbr_pos_fd(fd, number / 10);
-	ft_putchar_fd(fd, number % 10 + 48);
+	ft_putull_fd(fd, number);
+	ft_putchar_fd(fd, '\n');
 }
