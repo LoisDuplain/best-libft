@@ -71,6 +71,7 @@ SRCS += sources/memory/ft_freeclear.c
 SRCS += sources/memory/ft_memset.c
 SRCS += sources/strings/ft_append_strs.c
 SRCS += sources/strings/ft_contains_char.c
+SRCS += sources/strings/ft_ctostr.c
 SRCS += sources/strings/ft_find_char.c
 SRCS += sources/strings/ft_strcpy.c
 SRCS += sources/strings/ft_strdup.c
