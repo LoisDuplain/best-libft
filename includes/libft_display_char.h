@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 14:25:17 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/14 14:28:42 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/15 16:10:28 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,17 @@ void	ft_putchar_err(char c);
 **	./display/char/ft_putchar_errnl.c
 */
 void	ft_putchar_errnl(char c);
+
+/*
+**	Print n c characters on file descriptor fd.
+**	./display/char/ft_putnchar_fd.c
+*/
+void	ft_putnchar_fd(int fd, char c, size_t n);
+
+/*
+**	Print n c characters on standard output.
+**	./display/char/ft_putnchar.c
+*/
+void	ft_putnchar(char c, size_t n);
 
 #endif
