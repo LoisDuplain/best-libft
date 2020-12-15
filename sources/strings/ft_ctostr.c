@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 17:25:31 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 17:26:15 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/15 17:59:13 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 char	*ft_ctostr(char c)
 {
-	return (ft_strdup(&c));
+	char	*result;
+
+	result = ft_strdup(" ");
+	result[0] = c;
+	return (result);
 }
