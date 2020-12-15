@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 14:25:17 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 16:10:28 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/15 18:18:48 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,33 @@ void	ft_putchar_errnl(char c);
 void	ft_putnchar_fd(int fd, char c, size_t n);
 
 /*
+**	Print n c characters on file descriptor fd followed by a new line.
+**	./display/char/ft_putnchar_fdnl.c
+*/
+void	ft_putnchar_fdnl(int fd, char c, size_t n);
+
+/*
 **	Print n c characters on standard output.
 **	./display/char/ft_putnchar.c
 */
 void	ft_putnchar(char c, size_t n);
+
+/*
+**	Print n c characters on standard output followed by a new line.
+**	./display/char/ft_putnchar_nl.c
+*/
+void	ft_putnchar_nl(char c, size_t n);
+
+/*
+**	Print n c characters on error output.
+**	./display/char/ft_putnchar_err.c
+*/
+void	ft_putnchar_err(char c, size_t n);
+
+/*
+**	Print n c characters on error output followed by a new line.
+**	./display/char/ft_putnchar_errnl.c
+*/
+void	ft_putnchar_errnl(char c, size_t n);
 
 #endif
