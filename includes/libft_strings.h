@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:26:01 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/15 17:31:36 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,5 +97,11 @@ char	*ft_strndup(const char *str, size_t n);
 **	The duplicated string.
 */
 char	*ft_strdup(const char *str);
+
+/*
+**	Convert char c to mallocated string.
+**	./strings/ft_ctostr.c
+*/
+char	*ft_ctostr(char c);
 
 #endif
