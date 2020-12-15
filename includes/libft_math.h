@@ -1,20 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   libft_math.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 12:37:13 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/15 14:48:54 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_MATH_H
+# define LIBFT_MATH_H
 
-t_bool	is_ascii(int c)
-{
-	if (c >= 0 && c <= 127)
-		return (TRUE);
-	return (FALSE);
-}
+/*
+**	START CUSTOM INCLUDES
+*/
+
+# include "libft.h"
+
+/*
+**	END CUSTOM INCLUDES
+*/
+
+/*
+**	Get the minimum value between int a and int b.
+**	./math/ft_min.c
+*/
+int		ft_min(int a, int b);
+
+/*
+**	Get the absolute value of int a.
+**	./math/ft_abs.c
+*/
+int		ft_abs(int a);
+
+#endif

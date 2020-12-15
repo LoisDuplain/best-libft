@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:49 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 14:31:52 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/15 14:49:59 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@
 # include "./libft_strings.h"
 # include "./libft_file.h"
 # include "./libft_memory.h"
+# include "./libft_math.h"
 
 /*
 **	END CUSTOM INCLUDES

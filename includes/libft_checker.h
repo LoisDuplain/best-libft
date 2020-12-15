@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 11:12:18 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:11:02 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/15 12:37:13 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,6 @@ t_bool	is_printable(char c);
 **	Check if character c is printable.
 **	./checker/is_ascii.c
 */
-t_bool	ft_isascii(int c);
+t_bool	is_ascii(int c);
 
 #endif

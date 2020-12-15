@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_ascii.c                                         :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 18:10:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 12:37:13 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/15 14:46:24 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/15 14:46:51 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	is_ascii(int c)
+int		ft_min(int a, int b)
 {
-	if (c >= 0 && c <= 127)
-		return (TRUE);
-	return (FALSE);
+	if (a < b)
+		return (a);
+	return (b);
 }
