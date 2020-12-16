@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 17:31:36 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/16 11:27:10 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,17 @@ char	*ft_strdup(const char *str);
 **	./strings/ft_ctostr.c
 */
 char	*ft_ctostr(char c);
+
+/*
+**	Uppercase all characters in string str.
+**	./strings/ft_toupper.c
+*/
+char	*ft_toupper(char *str);
+
+/*
+**	Lowercase all characters in string str.
+**	./strings/ft_toupper.c
+*/
+char	*ft_tolower(char *str);
 
 #endif

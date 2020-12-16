@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:16:50 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 10:48:05 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/16 11:28:49 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int		ft_natoi(char *str, size_t n);
 **	ibase(16) = "0123456789ABCDEF"
 **	./converter/ft_ulltoa_ibase.c
 */
-char	*ft_ulltoa_ibase(unsigned long long number, int base);
+char	*ft_ulltoa_ibase(unsigned long long number, int base, t_bool uppercase);
 
 /*
 **	Convert long long number to mallocated string in base ibase.
@@ -49,6 +49,24 @@ char	*ft_ulltoa_ibase(unsigned long long number, int base);
 **	ibase(16) = "0123456789ABCDEF"
 **	./converter/ft_lltoa_ibase.c
 */
-char	*ft_lltoa_ibase(long long number, int base);
+char	*ft_lltoa_ibase(long long number, int base, t_bool uppercase);
+
+/*
+**	Get uppercased char from char c.
+**	c('a') = 'A'
+**	c('A') = 'A'
+**	c('1') = '1'
+**	./converter/ft_uppercase_char.c
+*/
+char	ft_uppercase_char(char c);
+
+/*
+**	Get lowercased char from char c.
+**	c('a') = 'a'
+**	c('A') = 'a'
+**	c('1') = '1'
+**	./converter/ft_lowercase_char.c
+*/
+char	ft_lowercase_char(char c);
 
 #endif

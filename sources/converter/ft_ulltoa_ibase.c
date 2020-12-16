@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 10:41:19 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/16 11:28:30 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static char	*fill_result(
 		if ((number_backup % base) < 10)
 			result[length - 1] = (number_backup % base) + 48;
 		else
-			result[length - 1] = (number_backup % base) + 55;
+			result[length - 1] = (number_backup % base) + 87;
 		number_backup /= base;
 		length--;
 	}
@@ -32,7 +32,8 @@ static char	*fill_result(
 
 char		*ft_ulltoa_ibase(
 	unsigned long long number,
-	int base)
+	int base,
+	t_bool uppercase)
 {
 	unsigned long long	number_backup;
 	char				*result;
@@ -51,5 +52,8 @@ char		*ft_ulltoa_ibase(
 	if (!(result = malloc(sizeof(char) * (length + 1))))
 		return (0);
 	result[length] = '\0';
-	return (fill_result(number_backup, base, result, length));
+	result = fill_result(number_backup, base, result, length);
+	if (uppercase)
+		result = ft_toupper(result);
+	return (result);
 }

@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lltoa_ibase.c                                   :+:      :+:    :+:   */
+/*   ft_uppercase_char.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/16 10:40:15 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 11:29:22 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/16 11:18:19 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/16 11:19:44 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_lltoa_ibase(long long number, int base, t_bool uppercase)
+char	ft_uppercase_char(char c)
 {
-	char	*result;
-
-	if (number > 0)
-		return (ft_ulltoa_ibase((unsigned long long)number, base, uppercase));
-	result = ft_append_strs(
-				"-",
-				ft_ulltoa_ibase(
-					(unsigned long long)-number,
-					base,
-					uppercase)
-				,
-				FALSE,
-				TRUE);
-	return (result);
+	if (is_lowercase(c))
+		return (c - 32);
+	return (c);
 }
