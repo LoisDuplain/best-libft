@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 12:27:28 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/16 12:52:02 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,11 @@ char		*ft_ulltoa_ibase(
 	length = 0;
 	if (number == 0)
 		return (ft_strdup("0"));
-	length = ft_ull_length(number);
+	while (number != 0)
+	{
+		number /= base;
+		length++;
+	}
 	if (!(result = malloc(sizeof(char) * (length + 1))))
 		return (0);
 	result[length] = '\0';
