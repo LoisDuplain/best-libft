@@ -29,7 +29,9 @@ gmk:
 	./scripts/generate-mk.sh
 
 norminette: clean
+	@echo " "
 	norminette -R CheckForbiddenSourceHeader sources
+	@echo " "
 	norminette -R CheckDefine includes
 
 test: $(NAME)
