@@ -78,6 +78,7 @@ SRCS += sources/memory/ft_calloc.c
 SRCS += sources/memory/ft_freeclear.c
 SRCS += sources/memory/ft_memset.c
 SRCS += sources/number/ft_ll_length.c
+SRCS += sources/number/ft_ull_ibase_length.c
 SRCS += sources/number/ft_ull_length.c
 SRCS += sources/strings/ft_append_strs.c
 SRCS += sources/strings/ft_contains_char.c

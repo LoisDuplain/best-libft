@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ull_length.c                                    :+:      :+:    :+:   */
+/*   ft_ull_ibase_length.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/16 12:22:35 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 13:10:00 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2020/12/16 13:05:34 by lduplain          #+#    #+#             */
+/*   Updated: 2020/12/16 13:08:48 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_ull_length(unsigned long long number)
+size_t	ft_ull_ibase_length(unsigned long long number, int ibase)
 {
-	return (ft_ull_ibase_length(number, 10));
+	size_t	result;
+
+	result = 0;
+	while (number != 0)
+	{
+		number /= ibase;
+		result++;
+	}
+	return (result);
 }

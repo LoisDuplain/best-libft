@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 12:52:02 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/16 13:11:48 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 static char	*fill_result(
 	unsigned long long number,
-	int base,
+	int ibase,
 	char *result,
 	int length)
 {
 	while (number != 0)
 	{
-		if ((number % base) < 10)
-			result[length - 1] = (number % base) + 48;
+		if ((number % ibase) < 10)
+			result[length - 1] = (number % ibase) + 48;
 		else
-			result[length - 1] = (number % base) + 87;
-		number /= base;
+			result[length - 1] = (number % ibase) + 87;
+		number /= ibase;
 		length--;
 	}
 	return (result);
@@ -32,7 +32,7 @@ static char	*fill_result(
 
 char		*ft_ulltoa_ibase(
 	unsigned long long number,
-	int base,
+	int ibase,
 	t_bool uppercase)
 {
 	char				*result;
@@ -42,15 +42,11 @@ char		*ft_ulltoa_ibase(
 	length = 0;
 	if (number == 0)
 		return (ft_strdup("0"));
-	while (number != 0)
-	{
-		number /= base;
-		length++;
-	}
+	length = ft_ull_ibase_length(number, ibase);
 	if (!(result = malloc(sizeof(char) * (length + 1))))
 		return (0);
 	result[length] = '\0';
-	result = fill_result(number, base, result, length);
+	result = fill_result(number, ibase, result, length);
 	if (uppercase)
 		result = ft_toupper(result);
 	return (result);

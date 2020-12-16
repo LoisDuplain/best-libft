@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 12:20:58 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 12:26:31 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/16 13:10:22 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,14 @@
 */
 
 /*
-**	Get the unsigned long long number length.
+**	Get the unsigned long long number length in base ibase.
+**	It means the number of digits in number.
+**	./number/ft_ull_ibase_length.c
+*/
+size_t	ft_ull_ibase_length(unsigned long long number, int ibase);
+
+/*
+**	Get the unsigned long long number length in base 10.
 **	It means the number of digits in number.
 **	./number/ft_ull_length.c
 */
