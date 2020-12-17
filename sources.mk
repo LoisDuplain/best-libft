@@ -86,6 +86,7 @@ SRCS += sources/strings/ft_find_char.c
 SRCS += sources/strings/ft_strcpy.c
 SRCS += sources/strings/ft_strdup.c
 SRCS += sources/strings/ft_strlen.c
+SRCS += sources/strings/ft_strmult_back.c
 SRCS += sources/strings/ft_strmult_front.c
 SRCS += sources/strings/ft_strndup.c
 SRCS += sources/strings/ft_tolower.c
