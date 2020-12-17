@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 11:27:10 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/17 11:13:44 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,5 +115,16 @@ char	*ft_toupper(char *str);
 **	./strings/ft_toupper.c
 */
 char	*ft_tolower(char *str);
+
+/*
+**	Append string back of string to_mult n times.
+**	(!WARNING) if to_mult is mallocated, ft_strmult don't free it.
+**	./strings/ft_strmult_front.c
+*/
+char	*ft_strmult_front(
+	char *to_mult,
+	char *back,
+	size_t n,
+	t_bool free_back);
 
 #endif
