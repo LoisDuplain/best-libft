@@ -6,13 +6,14 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:29:07 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:19:05 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/17 13:32:41 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(int fd, char c)
+size_t	ft_putchar_fd(int fd, char c)
 {
 	write(fd, &c, 1);
+	return (1);
 }

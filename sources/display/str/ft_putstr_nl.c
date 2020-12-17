@@ -6,13 +6,13 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:22:02 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:22:09 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/17 13:37:49 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_nl(char *str)
+size_t	ft_putstr_nl(char *str)
 {
-	ft_putstr_fdnl(1, str);
+	return (ft_putstr_fdnl(1, str));
 }
