@@ -71,6 +71,7 @@ SRCS += sources/file/ft_close_file.c
 SRCS += sources/file/ft_open_file.c
 SRCS += sources/file/ft_read_next_line.c
 SRCS += sources/math/ft_abs.c
+SRCS += sources/math/ft_iabsui.c
 SRCS += sources/math/ft_min.c
 SRCS += sources/memory/ft_bzero.c
 SRCS += sources/memory/ft_calloc.c

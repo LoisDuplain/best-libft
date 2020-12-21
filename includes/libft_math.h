@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 14:48:54 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2020/12/21 16:11:39 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,11 @@ int		ft_min(int a, int b);
 **	./math/ft_abs.c
 */
 int		ft_abs(int a);
+
+/*
+**	Get the absolute value of int a converted to unsigned int.
+**	./math/ft_iabsui.c
+*/
+unsigned int	ft_iabsui(int a);
 
 #endif
