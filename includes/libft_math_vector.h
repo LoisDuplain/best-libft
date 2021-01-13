@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_printf_flagcontainer.h                       :+:      :+:    :+:   */
+/*   libft_math_vector.h                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/15 12:07:09 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:29:57 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/01/13 15:08:33 by lduplain          #+#    #+#             */
+/*   Updated: 2021/01/13 15:14:04 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_PRINTF_FLAGCONTAINER_H
-# define LIBFT_PRINTF_FLAGCONTAINER_H
+#ifndef LIBFT_MATH_VECTOR_H
+# define LIBFT_MATH_VECTOR_H
 
 /*
 **	START CUSTOM INCLUDES
 */
 
-# include "libft_printf.h"
+# include "libft.h"
 
 /*
 **	END CUSTOM INCLUDES
@@ -26,18 +26,12 @@
 /*
 **	START DEFINES
 */
-typedef struct	s_printable
+typedef struct	s_vector3
 {
-	char	type;
-	t_bool	minus;
-	int		minus_value;
-	t_bool	star;
-	int		star_value;
-	t_bool	dot;
-	int		dot_value;
-	t_bool	zero;
-	int		zero_value;
-}				t_printable;
+	double	vx;
+	double	vy;
+	double	vz;
+}				t_vector3;
 /*
 **	END DEFINES
 */

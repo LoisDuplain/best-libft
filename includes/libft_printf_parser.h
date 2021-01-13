@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 11:25:19 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:30:06 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/13 15:43:17 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 **	START CUSTOM INCLUDES
 */
 
-# include "libft_printf.h"
+# include "libft.h"
 
 /*
 **	END CUSTOM INCLUDES
@@ -25,7 +25,7 @@
 
 /*
 **	Parse dot flag.
-**	./dot_parser.c
+**	./printf/parser/dot_parser.c
 */
 int	dot_parser(
 	const char *format,
@@ -35,7 +35,7 @@ int	dot_parser(
 
 /*
 **	Parse star flag.
-**	./star_parser.c
+**	./printf/parser/star_parser.c
 */
 int	star_parser(
 	const char *format,
@@ -45,7 +45,7 @@ int	star_parser(
 
 /*
 **	Parse minus flag.
-**	./minus_parser.c
+**	./printf/parser/minus_parser.c
 */
 int	minus_parser(
 	const char *format,
@@ -55,7 +55,7 @@ int	minus_parser(
 
 /*
 **	Parse zero flag.
-**	./zero_parser.c
+**	./printf/parser/zero_parser.c
 */
 int	zero_parser(
 	const char *format,
