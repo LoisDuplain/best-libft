@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:49 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 12:23:53 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/13 15:28:54 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include <limits.h>
+# include <stdarg.h>
 
 /*
 **	END STANDARD INCLUDES
@@ -43,6 +44,7 @@
 # include "./libft_memory.h"
 # include "./libft_math.h"
 # include "./libft_number.h"
+# include "./libft_printf.h"
 
 /*
 **	END CUSTOM INCLUDES
