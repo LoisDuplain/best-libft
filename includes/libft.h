@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:49 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 11:27:31 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 13:09:48 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 # include <fcntl.h>
 # include <limits.h>
 # include <stdarg.h>
+# include <math.h>
 
 /*
 **	END STANDARD INCLUDES

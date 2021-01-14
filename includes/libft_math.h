@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 13:00:10 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 18:46:31 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@
 */
 
 # include "libft.h"
+# include "libft_math_vector.h"
+# include "libft_math_point.h"
+# include "libft_math_pythagore.h"
 
 /*
 **	END CUSTOM INCLUDES
