@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 11:25:58 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 11:39:00 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 12:02:32 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,12 @@ typedef struct	s_color
 /*
 **	END DEFINES
 */
+
+/*
+**	Create color from alpha(a), red(r), green(g) and blue(b) int parameters.
+**	./color/create_color.c
+*/
+t_color			create_color(int a, int r, int g, int b);
 
 /*
 **	Convert t_color to int. (usable by minilibx)

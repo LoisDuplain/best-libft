@@ -8,6 +8,7 @@ SRCS += sources/checker/is_space.c
 SRCS += sources/checker/is_uppercase.c
 SRCS += sources/checker/is_whitespace.c
 SRCS += sources/color/color_to_int.c
+SRCS += sources/color/create_color.c
 SRCS += sources/converter/ft_atoi.c
 SRCS += sources/converter/ft_lltoa_ibase.c
 SRCS += sources/converter/ft_lowercase_char.c

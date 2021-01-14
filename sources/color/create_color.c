@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   color_to_int.c                                     :+:      :+:    :+:   */
+/*   create_color.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/14 11:28:45 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 12:00:14 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/01/14 12:00:21 by lduplain          #+#    #+#             */
+/*   Updated: 2021/01/14 12:01:35 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		color_to_int(t_color color)
+t_color	create_color(int a, int r, int g, int b)
 {
-	return ((255 - color.a) << 24 | color.r << 16 | color.g << 8 | color.b);
+	t_color	color;
+
+	color.a = a;
+	color.r = r;
+	color.g = g;
+	color.b = b;
+	return (color);
 }
