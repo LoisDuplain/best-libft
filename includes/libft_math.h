@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 12:47:09 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 13:00:10 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,10 @@ typedef struct	s_interval
 **	END DEFINES
 */
 
+/*
+**	Get the minimum value between int a and int b.
+**	./math/ft_min.c
+*/
 t_interval		create_interval(float istart, float istop);
 
 /*
@@ -65,6 +69,6 @@ unsigned int	ft_iabsui(int a);
 **	Map a value contained in interval iinput to interval ioutput.
 **	./math/ft_map.c
 */
-float			map(float value, t_interval iinput, t_interval ioutput);
+float			ft_map(float value, t_interval iinput, t_interval ioutput);
 
 #endif
