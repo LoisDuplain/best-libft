@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/21 16:13:58 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 11:01:04 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@
 **	./math/ft_min.c
 */
 int				ft_min(int a, int b);
+
+/*
+**	Get the maximum value between int a and int b.
+**	./math/ft_max.c
+*/
+int				ft_max(int a, int b);
 
 /*
 **	Get the absolute value of int a.

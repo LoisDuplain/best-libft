@@ -1,39 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_math_vector.h                                :+:      :+:    :+:   */
+/*   ft_max.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/13 15:08:33 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 09:53:07 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/01/14 11:00:09 by lduplain          #+#    #+#             */
+/*   Updated: 2021/01/14 11:00:39 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_MATH_VECTOR_H
-# define LIBFT_MATH_VECTOR_H
+#include "libft.h"
 
-/*
-**	START CUSTOM INCLUDES
-*/
-
-# include "libft.h"
-
-/*
-**	END CUSTOM INCLUDES
-*/
-
-/*
-**	START DEFINES
-*/
-typedef struct	s_vector3
+int		ft_max(int a, int b)
 {
-	float	vx;
-	float	vy;
-	float	vz;
-}				t_vector3;
-/*
-**	END DEFINES
-*/
-
-#endif
+	if (a > b)
+		return (a);
+	return (b);
+}
