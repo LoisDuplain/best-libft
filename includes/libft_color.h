@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 11:25:58 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 11:30:06 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 11:39:00 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,11 @@ typedef struct	s_color
 /*
 **	END DEFINES
 */
+
+/*
+**	Convert t_color to int. (usable by minilibx)
+**	./color/color_to_int.c
+*/
+int				color_to_int(t_color color);
 
 #endif
