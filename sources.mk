@@ -102,7 +102,6 @@ SRCS += sources/math/vector3/sub_vector_coord.c
 SRCS += sources/math/vector3/sub_vector_vector.c
 SRCS += sources/memory/ft_bzero.c
 SRCS += sources/memory/ft_calloc.c
-SRCS += sources/memory/ft_freeclear.c
 SRCS += sources/memory/ft_memset.c
 SRCS += sources/number/ft_ll_length.c
 SRCS += sources/number/ft_ull_ibase_length.c

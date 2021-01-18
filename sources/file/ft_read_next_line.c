@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:24:44 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/13 17:51:53 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/18 17:22:02 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,21 @@ static char		*get_second_line_part(char *source)
 		j++;
 	}
 	result[j] = 0;
-	ft_freeclear(source);
+	free(source);
+	source = NULL;
 	return (result);
+}
+
+static void		freeclear_readed_line(t_file *file)
+{
+	free(file->readed_line);
+	file->readed_line = NULL;
+}
+
+static void		freeclear_backup(t_file *file)
+{
+	free(file->p_backup);
+	file->p_backup = NULL;
 }
 
 t_read_status	ft_read_next_line(t_file *file)
@@ -72,10 +85,10 @@ t_read_status	ft_read_next_line(t_file *file)
 		file->p_backup = ft_append_strs(file->p_backup, buffer, TRUE, FALSE);
 	}
 	if (file->readed_line)
-		ft_freeclear(file->readed_line);
+		freeclear_readed_line(file);
 	file->readed_line = get_first_line_part(file->p_backup);
 	if (read_result == 0)
-		ft_freeclear(file->p_backup);
+		freeclear_backup(file);
 	if (read_result == 0)
 		return (read_success_eof);
 	file->p_backup = get_second_line_part(file->p_backup);
