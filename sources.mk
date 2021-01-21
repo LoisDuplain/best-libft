@@ -70,6 +70,7 @@ SRCS += sources/display/str/ft_putstr_fd.c
 SRCS += sources/display/str/ft_putstr_fdnl.c
 SRCS += sources/display/str/ft_putstr_nl.c
 SRCS += sources/file/ft_close_file.c
+SRCS += sources/file/ft_count_file_lines.c
 SRCS += sources/file/ft_open_file.c
 SRCS += sources/file/ft_read_next_line.c
 SRCS += sources/math/create_interval.c

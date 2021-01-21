@@ -6,7 +6,7 @@
 /*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:58:19 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:24:54 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/01/21 16:40:26 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,13 @@ t_read_status		ft_read_next_line(t_file *file);
 **	(t_bool)FALSE if closing failed.
 */
 t_bool				ft_close_file(t_file *file);
+
+/*
+**	Count lines in file located at path.
+**	./file/ft_count_file_lines.c
+**	Return:
+**	(ssize_t)number of lines|-1 when read fail.
+*/
+ssize_t				ft_count_file_lines(char *path);
 
 #endif
