@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_math.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 18:46:31 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/04 14:55:30 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,16 +51,34 @@ t_interval		create_interval(float istart, float istop);
 int				ft_min(int a, int b);
 
 /*
+**	Get the minimum value between float a and float b.
+**	./math/ft_fmin.c
+*/
+float			ft_fmin(float a, float b);
+
+/*
 **	Get the maximum value between int a and int b.
 **	./math/ft_max.c
 */
 int				ft_max(int a, int b);
 
 /*
+**	Get the maximum value between float a and float b.
+**	./math/ft_fmax.c
+*/
+float			ft_fmax(float a, float b);
+
+/*
 **	Get the absolute value of int a.
 **	./math/ft_abs.c
 */
 int				ft_abs(int a);
+
+/*
+**	Get the absolute value of float a.
+**	./math/ft_fabs.c
+*/
+float			ft_fabs(float a);
 
 /*
 **	Get the absolute value of int a converted to unsigned int.
