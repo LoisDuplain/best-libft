@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   is_printable.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 17:54:36 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 13:05:58 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:46:02 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool		is_printable(char c)
+t_bool	is_printable(char c)
 {
 	if (c >= 32 && c <= 126)
 		return (TRUE);

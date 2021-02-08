@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   is_lowercase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 14:42:16 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 13:04:05 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:45:49 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool		is_lowercase(char c)
+t_bool	is_lowercase(char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (TRUE);

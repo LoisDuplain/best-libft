@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   is_alphanumeric.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 14:45:29 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 12:54:28 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:45:30 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool		is_alphanumeric(char c)
+t_bool	is_alphanumeric(char c)
 {
 	return (is_numeric(c) || is_alpha(c));
 }

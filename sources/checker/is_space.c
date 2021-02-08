@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   is_space.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 14:37:52 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 13:02:58 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:46:07 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool		is_space(char c)
+t_bool	is_space(char c)
 {
 	if (c == ' ')
 		return (TRUE);

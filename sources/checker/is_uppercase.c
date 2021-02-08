@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   is_uppercase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 14:41:26 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 13:04:43 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:46:10 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool		is_uppercase(char c)
+t_bool	is_uppercase(char c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (TRUE);
