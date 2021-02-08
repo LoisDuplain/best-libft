@@ -6,30 +6,28 @@
 /*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/08 10:58:41 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 16:46:02 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*fill_result(unsigned long long number, int ibase,
-	char *result, int length)
+char	*fill_result(unsigned long long nbr, int ibase, char *result,	\
+	int len)
 {
-	while (number != 0)
+	while (nbr != 0)
 	{
-		if ((number % ibase) < 10)
-			result[length - 1] = (number % ibase) + 48;
+		if ((nbr % ibase) < 10)
+			result[len - 1] = (nbr % ibase) + 48;
 		else
-			result[length - 1] = (number % ibase) + 87;
-		number /= ibase;
-		length--;
+			result[len - 1] = (nbr % ibase) + 87;
+		nbr /= ibase;
+		len--;
 	}
 	return (result);
 }
 
-char		*ft_ulltoa_ibase(
-	unsigned long long number,
-	int ibase,
+char	*ft_ulltoa_ibase(unsigned long long number, int ibase,	\
 	t_bool uppercase)
 {
 	char				*result;
@@ -40,7 +38,8 @@ char		*ft_ulltoa_ibase(
 	if (number == 0)
 		return (ft_strdup("0"));
 	length = ft_ull_ibase_length(number, ibase);
-	if (!(result = malloc(sizeof(char) * (length + 1))))
+	result = malloc(sizeof(char) * (length + 1));
+	if (!result)
 		return (0);
 	result[length] = '\0';
 	result = fill_result(number, ibase, result, length);
