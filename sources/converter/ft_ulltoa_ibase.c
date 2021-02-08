@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ulltoa_ibase.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 13:11:48 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:58:41 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*fill_result(
-	unsigned long long number,
-	int ibase,
-	char *result,
-	int length)
+char	*fill_result(unsigned long long number, int ibase,
+	char *result, int length)
 {
 	while (number != 0)
 	{

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   natoi.c                                            :+:      :+:    :+:   */
+/*   ft_natoi.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 18:01:27 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 18:01:41 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/08 10:56:34 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_natoi(char *str, size_t n)
+int	ft_natoi(char *str, size_t n)
 {
 	unsigned int	result;
 	size_t			i;
