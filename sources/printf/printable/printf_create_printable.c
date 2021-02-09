@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   create_printable.c                                 :+:      :+:    :+:   */
+/*   printf_create_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 13:53:30 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:00 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:52:02 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_printable	create_printable(
-	void)
+t_printable	create_printable(void)
 {
 	t_printable	printable;
 

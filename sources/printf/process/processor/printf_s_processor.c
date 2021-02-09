@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s_processor.c                                      :+:      :+:    :+:   */
+/*   printf_s_processor.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 18:47:07 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:03 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:54:58 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	s_processor(
-	t_printable *prtbl,
-	va_list args,
+void	s_processor(	\
+	t_printable *prtbl,	\
+	va_list args,		\
 	char **to_print)
 {
 	char	*value;

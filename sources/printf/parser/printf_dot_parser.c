@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dot_parser.c                                       :+:      :+:    :+:   */
+/*   printf_dot_parser.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 12:47:26 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:26 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:51:07 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	dot_parser(
-	const char *format,
-	int index,
-	va_list args,
+int	dot_parser(			\
+	const char *format,	\
+	int index,			\
+	va_list args,		\
 	t_printable *prtbl)
 {
 	prtbl->dot = TRUE;

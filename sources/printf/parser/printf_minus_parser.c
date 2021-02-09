@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minus_parser.c                                     :+:      :+:    :+:   */
+/*   printf_minus_parser.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 12:29:45 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:24 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:51:21 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	minus_parser(
-	const char *format,
-	size_t index,
-	va_list args,
+int	minus_parser(		\
+	const char *format,	\
+	size_t index,		\
+	va_list args,		\
 	t_printable *prtbl)
 {
 	prtbl->minus = TRUE;

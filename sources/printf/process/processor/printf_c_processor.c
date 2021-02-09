@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   c_processor.c                                      :+:      :+:    :+:   */
+/*   printf_c_processor.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 18:53:45 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:13 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:54:22 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	c_processor(
-	t_printable *prtbl,
-	va_list args,
+size_t	c_processor(	\
+	t_printable *prtbl,	\
+	va_list args,		\
 	char **to_print)
 {
 	size_t	char_count;

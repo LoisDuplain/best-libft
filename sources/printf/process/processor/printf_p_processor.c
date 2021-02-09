@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   p_processor.c                                      :+:      :+:    :+:   */
+/*   printf_p_processor.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 19:05:47 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:09 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:54:40 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	p_processor(
-	t_printable *prtbl,
-	va_list args,
+void	p_processor(	\
+	t_printable *prtbl,	\
+	va_list args,		\
 	char **to_print)
 {
 	(void)prtbl;

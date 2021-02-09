@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   diuxx_processor.c                                  :+:      :+:    :+:   */
+/*   printf_diuxx_processor.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 14:12:58 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:11 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:59:51 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	diuxx_processor(
-	t_printable *prtbl,
-	va_list args,
+void	diuxx_processor(	\
+	t_printable *prtbl,		\
+	va_list args,			\
 	char **to_print)
 {
 	long	value;
@@ -38,9 +38,9 @@ void	diuxx_processor(
 		*to_print = ft_strmult_front("-", *to_print, 1, TRUE);
 }
 
-t_bool	convert_zeros_and_check_precision(
-	t_printable *prtbl,
-	char **to_print,
+t_bool	convert_zeros_and_check_precision(	\
+	t_printable *prtbl,						\
+	char **to_print,						\
 	long value)
 {
 	if (prtbl->zero && prtbl->zero_value > 0)
@@ -61,14 +61,17 @@ t_bool	convert_zeros_and_check_precision(
 	return (FALSE);
 }
 
-void	fill_zeros(
-	t_printable *prtbl,
-	char **to_print,
+void	fill_zeros(		\
+	t_printable *prtbl,	\
+	char **to_print,	\
 	long value)
 {
 	int		zeros;
 
-	zeros = prtbl->zero_value - ft_strlen(*to_print) - ((value < 0) ? 1 : 0);
+	if (value < 0)
+		zeros = prtbl->zero_value - ft_strlen(*to_print) - 1;
+	else
+		zeros = prtbl->zero_value - ft_strlen(*to_print);
 	if (!prtbl->dot && prtbl->zero && zeros > 0)
 		*to_print = ft_strmult_front("0", *to_print, zeros, TRUE);
 	if (prtbl->dot && prtbl->dot_value < 0 && prtbl->zero && zeros > 0)

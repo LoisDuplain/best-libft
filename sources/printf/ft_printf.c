@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:14:12 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:32:49 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:50:30 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_printf(
-	const char *format,
-	...)
+int	ft_printf(const char *format, ...)
 {
 	va_list		args;
 	size_t		char_count;

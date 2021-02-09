@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   star_parser.c                                      :+:      :+:    :+:   */
+/*   printf_star_parser.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 11:26:36 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:18 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:51:34 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	star_parser(
-	const char *format,
-	int index,
-	va_list args,
+int	star_parser(		\
+	const char *format,	\
+	int index,			\
+	va_list args,		\
 	t_printable *prtbl)
 {
 	prtbl->star = TRUE;

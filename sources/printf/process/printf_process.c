@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   process.c                                          :+:      :+:    :+:   */
+/*   printf_process.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 13:37:38 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:32:54 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:54:03 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	process(
-	t_printable *prtbl,
+size_t	process(		\
+	t_printable *prtbl,	\
 	va_list args)
 {
 	char	*to_print;
@@ -28,7 +28,7 @@ size_t	process(
 	else if (prtbl->type == 'p')
 		p_processor(prtbl, args, &to_print);
 	else if (prtbl->type == 'd' || prtbl->type == 'i'
-	|| prtbl->type == 'u' || prtbl->type == 'x' || prtbl->type == 'X')
+		|| prtbl->type == 'u' || prtbl->type == 'x' || prtbl->type == 'X')
 		diuxx_processor(prtbl, args, &to_print);
 	else if (prtbl->type == '%')
 		pcrt_processor(prtbl, args, &to_print);

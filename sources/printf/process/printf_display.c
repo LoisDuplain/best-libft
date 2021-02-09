@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   display.c                                          :+:      :+:    :+:   */
+/*   printf_display.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 13:55:56 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:32:58 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:53:23 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	display(
-	t_printable *prtbl,
+size_t	display(		\
+	t_printable *prtbl,	\
 	char **to_print)
 {
 	int		spaces;

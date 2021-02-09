@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   preprocess.c                                       :+:      :+:    :+:   */
+/*   printf_preprocess.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 13:45:28 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:32:56 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:53:31 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	preprocess(
-	const char *format,
+size_t	preprocess(		\
+	const char *format,	\
 	va_list args)
 {
 	t_printable	printable;

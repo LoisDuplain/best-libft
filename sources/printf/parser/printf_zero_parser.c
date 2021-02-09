@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zero_parser.c                                      :+:      :+:    :+:   */
+/*   printf_zero_parser.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 13:53:23 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:33:16 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:51:41 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	zero_parser(
-	const char *format,
-	size_t index,
-	va_list args,
+int	zero_parser(		\
+	const char *format,	\
+	size_t index,		\
+	va_list args,		\
 	t_printable *prtbl)
 {
 	prtbl->zero = TRUE;
