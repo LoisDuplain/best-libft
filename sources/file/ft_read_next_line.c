@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_read_next_line.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:24:44 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/18 17:22:02 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:10:27 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		*get_first_line_part(char *source)
+static char	*get_first_line_part(char *source)
 {
 	char	*result;
 	size_t	index;
@@ -22,7 +22,8 @@ static char		*get_first_line_part(char *source)
 	index = 0;
 	while (source[index] && source[index] != '\n')
 		index++;
-	if (!(result = ft_calloc(index + 1, sizeof(char))))
+	result = ft_calloc(index + 1, sizeof(char));
+	if (!result)
 		return (NULL);
 	index = 0;
 	while (source[index] && source[index] != '\n')
@@ -34,7 +35,7 @@ static char		*get_first_line_part(char *source)
 	return (result);
 }
 
-static char		*get_second_line_part(char *source)
+static char	*get_second_line_part(char *source)
 {
 	char	*result;
 	size_t	i;
@@ -43,7 +44,8 @@ static char		*get_second_line_part(char *source)
 	if (!source)
 		return (NULL);
 	i = ft_find_char(source, '\n') + 1;
-	if (!(result = ft_calloc(ft_strlen(source) - i + 1, sizeof(char))))
+	result = ft_calloc(ft_strlen(source) - i + 1, sizeof(char));
+	if (!result)
 		return (NULL);
 	j = 0;
 	while (source[i + j])
@@ -57,13 +59,13 @@ static char		*get_second_line_part(char *source)
 	return (result);
 }
 
-static void		freeclear_readed_line(t_file *file)
+static void	freeclear_readed_line(t_file *file)
 {
 	free(file->readed_line);
 	file->readed_line = NULL;
 }
 
-static void		freeclear_backup(t_file *file)
+static void	freeclear_backup(t_file *file)
 {
 	free(file->p_backup);
 	file->p_backup = NULL;
@@ -79,7 +81,8 @@ t_read_status	ft_read_next_line(t_file *file)
 	read_result = 1;
 	while (!ft_contains_char(file->p_backup, '\n') && read_result != 0)
 	{
-		if ((read_result = read(file->c_fd, &buffer, BUFFER_SIZE)) == -1)
+		read_result = read(file->c_fd, &buffer, BUFFER_SIZE);
+		if (read_result == -1)
 			return (read_fail);
 		buffer[read_result] = '\0';
 		file->p_backup = ft_append_strs(file->p_backup, buffer, TRUE, FALSE);
