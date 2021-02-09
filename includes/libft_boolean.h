@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_boolean.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 17:54:11 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 17:54:50 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:13:23 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@
 /*
 **	START DEFINES
 */
-typedef enum	e_bool
+typedef enum e_bool
 {
 	TRUE = 1,
 	FALSE = 0,
-}				t_bool;
+}t_bool;
 /*
 **	END DEFINES
 */

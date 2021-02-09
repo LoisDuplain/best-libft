@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_strings.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/17 11:31:39 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:20:06 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,10 +121,10 @@ char	*ft_tolower(char *str);
 **	(!WARNING) if to_mult is mallocated, ft_strmult_* don't free it.
 **	./strings/ft_strmult_front.c
 */
-char	*ft_strmult_front(
-	char *to_mult,
-	char *back,
-	size_t n,
+char	*ft_strmult_front(	\
+	char *to_mult,			\
+	char *back,				\
+	size_t n,				\
 	t_bool free_back);
 
 /*
@@ -132,10 +132,10 @@ char	*ft_strmult_front(
 **	(!WARNING) if to_mult is mallocated, ft_strmult_* don't free it.
 **	./strings/ft_strmult_back.c
 */
-char	*ft_strmult_back(
-	char *to_mult,
-	char *front,
-	size_t n,
+char	*ft_strmult_back(	\
+	char *to_mult,			\
+	char *front,			\
+	size_t n,				\
 	t_bool free_front);
 
 #endif

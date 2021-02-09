@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_math_point.h                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 18:29:42 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 18:32:23 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:15:35 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@
 /*
 **	START DEFINES
 */
-typedef struct	s_point3
+typedef struct s_point3
 {
 	float	x;
 	float	y;
 	float	z;
-}				t_point3;
+}t_point3;
 /*
 **	END DEFINES
 */

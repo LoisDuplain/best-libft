@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_printf_processor.h                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:46:25 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/13 15:41:45 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:19:38 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,16 @@
 **	Preprocess string.
 **	./printf/process/printf_printf_preprocess.c
 */
-size_t	preprocess(
-	const char *format,
+size_t	preprocess(		\
+	const char *format,	\
 	va_list args);
 
 /*
 **	Process t_printable with args.
 **	./printf/process/printf_process.c
 */
-size_t	process(
-	t_printable *prtbl,
+size_t	process(		\
+	t_printable *prtbl,	\
 	va_list args);
 
 /*
@@ -67,32 +67,35 @@ void	diuxx_processor(t_printable *printable, va_list args, char **to_print);
 **	Only used by diuxx processor function.
 **	./printf/process/processor/printf_diuxx_processor.c
 */
-t_bool	convert_zeros_and_check_precision(
-	t_printable *prtbl,
-	char **to_print,
+t_bool	convert_zeros_and_check_precision(	\
+	t_printable *prtbl,						\
+	char **to_print,						\
 	long value);
 
 /*
 **	Only used by diuxx processor function.
 **	./printf/process/processor/printf_diuxx_processor.c
 */
-void	fill_zeros(
-	t_printable *prtbl,
-	char **to_print,
+void	fill_zeros(		\
+	t_printable *prtbl,	\
+	char **to_print,	\
 	long value);
 
 /*
 **	Process % type.
 **	./printf/process/processor/printf_pcrt_processor.c
 */
-void	pcrt_processor(t_printable *printable, va_list args, char **to_print);
+void	pcrt_processor(		\
+	t_printable *printable,	\
+	va_list args,			\
+	char **to_print);
 
 /*
 **	Display printable.
 **	./printf/process/printf_display.c
 */
-size_t	display(
-	t_printable *prtbl,
+size_t	display(		\
+	t_printable *prtbl,	\
 	char **to_print);
 
 #endif

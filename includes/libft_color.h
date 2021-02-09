@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_color.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 11:25:58 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/05 15:52:40 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:14:03 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@
 /*
 **	START DEFINES
 */
-typedef struct	s_color
+typedef struct s_color
 {
 	char	a;
 	char	r;
 	char	g;
 	char	b;
-}				t_color;
+}t_color;
 /*
 **	END DEFINES
 */
@@ -41,12 +41,12 @@ typedef struct	s_color
 **	Create color from alpha(a), red(r), green(g) and blue(b) int parameters.
 **	./color/create_color.c
 */
-t_color			create_color(char a, char r, char g, char b);
+t_color	create_color(char a, char r, char g, char b);
 
 /*
 **	Convert t_color to int. (usable by minilibx)
 **	./color/color_to_int.c
 */
-int				color_to_int(t_color color);
+int		color_to_int(t_color color);
 
 #endif

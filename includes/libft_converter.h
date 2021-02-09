@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_converter.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:16:50 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:58 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 14:14:30 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ int		ft_natoi(char *str, size_t n);
 **	ibase(16) = "0123456789ABCDEF"
 **	./converter/ft_ulltoa_ibase.c
 */
-char	*ft_ulltoa_ibase(
-	unsigned long long number,
-	int ibase,
+char	*ft_ulltoa_ibase(		\
+	unsigned long long number,	\
+	int ibase,					\
 	t_bool uppercase);
 
 /*
@@ -52,9 +52,9 @@ char	*ft_ulltoa_ibase(
 **	ibase(16) = "0123456789ABCDEF"
 **	./converter/ft_lltoa_ibase.c
 */
-char	*ft_lltoa_ibase(
-	long long number,
-	int ibase,
+char	*ft_lltoa_ibase(	\
+	long long number,		\
+	int ibase,				\
 	t_bool uppercase);
 
 /*
