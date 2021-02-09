@@ -30,9 +30,9 @@ gmk:
 
 norminette: clean
 	@echo " "
-	norminette -R CheckForbiddenSourceHeader sources
+	norminettev2 sources
 	@echo " "
-	norminette -R CheckDefine includes
+	norminettev2 includes
 
 test: $(NAME)
 	@echo "----- MAKEFILE TESTS -----"
