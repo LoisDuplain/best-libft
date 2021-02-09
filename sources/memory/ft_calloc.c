@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 16:04:16 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/09 17:58:10 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:31:02 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	*ft_calloc(size_t quantity, size_t type_size)
 {
 	void	*result;
 
-	if (!(result = malloc(quantity * type_size)))
+	result = malloc(quantity * type_size);
+	if (result == NULL)
 		return (NULL);
 	ft_bzero(result, quantity * type_size);
 	return (result);
