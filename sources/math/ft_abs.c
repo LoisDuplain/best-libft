@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:48:08 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 14:48:33 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:17:03 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_abs(int a)
+int	ft_abs(int a)
 {
 	if (a < 0)
 		return (-a);
