@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmult_back.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 11:27:18 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/17 11:30:59 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 13:37:38 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmult_back(
-	char *to_mult,
-	char *front,
-	size_t n,
+char	*ft_strmult_back(	\
+	char *to_mult,			\
+	char *front,			\
+	size_t n,				\
 	t_bool free_front)
 {
 	char	*result;
