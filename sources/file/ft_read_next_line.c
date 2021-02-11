@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_read_next_line.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:24:44 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 17:49:18 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/11 11:24:59 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,22 @@ static char	*get_first_line_part(char *source)
 static char	*get_second_line_part(char *source)
 {
 	char	*result;
+	size_t	i;
+	size_t	j;
 
 	if (!source)
-		return (0);
-	ft_strcpy(source, &source[ft_contains_char(source, '\n') + 1]);
-	result = NULL;
-	result = malloc((ft_strlen(source) + 1) * sizeof(char));
-	if (result == NULL)
-		return (source);
-	ft_strcpy(result, source);
+		return (NULL);
+	i = ft_find_char(source, '\n') + 1;
+	result = ft_calloc(ft_strlen(source) - i + 1, sizeof(char));
+	if (!result)
+		return (NULL);
+	j = 0;
+	while (source[i + j])
+	{
+		result[j] = source[i + j];
+		j++;
+	}
+	result[j] = 0;
 	free(source);
 	source = NULL;
 	return (result);
