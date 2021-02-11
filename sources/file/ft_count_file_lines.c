@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_count_file_lines.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 16:39:05 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 14:07:46 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/11 11:11:58 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@ ssize_t	ft_count_file_lines(char *path)
 	counter = 0;
 	read_status = ft_read_next_line(file);
 	while (read_status)
+	{
 		counter++;
+		read_status = ft_read_next_line(file);
+	}
 	ft_close_file(file);
 	if (read_status == read_fail)
 		return (read_fail);
