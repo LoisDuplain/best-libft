@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_close_file.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 17:07:19 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/10 12:22:55 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/18 15:22:58 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ t_bool	ft_close_file(t_file *file)
 		free(file->p_backup);
 	if (file->readed_line != 0)
 		free(file->readed_line);
+	free(file);
 	return (TRUE);
 }
