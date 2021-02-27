@@ -6,7 +6,7 @@
 /*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 18:47:07 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 13:54:58 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/27 15:06:53 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ void	s_processor(	\
 
 	value = va_arg(args, char*);
 	if (value == NULL)
-		*to_print = ft_strdup("(null)");
+		*to_print = ft_strdup("(null)", FALSE);
 	else
-		*to_print = ft_strdup(value);
+		*to_print = ft_strdup(value, FALSE);
 	if (prtbl->dot)
 	{
 		to_dup = ft_min(prtbl->dot_value, ft_strlen(*to_print));
-		*to_print = ft_strndup(*to_print, to_dup);
+		*to_print = ft_strndup(*to_print, to_dup, TRUE);
 	}
 }

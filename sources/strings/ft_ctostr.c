@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ctostr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 17:25:31 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 17:59:13 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/02/27 15:10:20 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_ctostr(char c)
 {
 	char	*result;
 
-	result = ft_strdup(" ");
+	result = ft_strdup(" ", FALSE);
 	result[0] = c;
 	return (result);
 }

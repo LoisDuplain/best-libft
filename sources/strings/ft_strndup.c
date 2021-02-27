@@ -6,13 +6,13 @@
 /*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 16:51:08 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 13:39:03 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/27 15:04:43 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strndup(const char *str, size_t n)
+char	*ft_strndup(const char *str, size_t n, t_bool to_free)
 {
 	size_t	index;
 	char	*result;
@@ -31,5 +31,7 @@ char	*ft_strndup(const char *str, size_t n)
 		index++;
 	}
 	result[index] = 0;
+	if (to_free == TRUE)
+		free((void *)str);
 	return (result);
 }

@@ -6,7 +6,7 @@
 /*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:23:00 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/08 17:16:50 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/27 15:09:04 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_file	*ft_open_file(const char *path, int open_flag)
 	if (!file)
 		return (NULL);
 	file->c_fd = fd;
-	file->c_file_path = ft_strdup(path);
+	file->c_file_path = ft_strdup(path, FALSE);
 	file->readed_line = 0;
 	file->p_backup = 0;
 	return (file);

@@ -6,7 +6,7 @@
 /*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 14:12:58 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 13:59:51 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/27 15:09:31 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ t_bool	convert_zeros_and_check_precision(	\
 	}
 	if (prtbl->dot && prtbl->dot_value == 0 && value == 0)
 	{
-		*to_print = ft_strdup("");
+		*to_print = ft_strdup("", FALSE);
 		return (TRUE);
 	}
 	return (FALSE);

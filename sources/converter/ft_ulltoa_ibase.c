@@ -6,7 +6,7 @@
 /*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/08 16:46:02 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/02/27 15:08:37 by faherrau         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_ulltoa_ibase(unsigned long long number, int ibase,	\
 	result = 0;
 	length = 0;
 	if (number == 0)
-		return (ft_strdup("0"));
+		return (ft_strdup("0", FALSE));
 	length = ft_ull_ibase_length(number, ibase);
 	result = malloc(sizeof(char) * (length + 1));
 	if (!result)
