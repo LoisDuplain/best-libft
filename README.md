@@ -11,11 +11,10 @@ Clone it in your project like this:
 .
 └── my_project/
     ├── best-libft/
-    ├── sources/
-    │   ├── another_file.c
-    │   └── again.c  
-    ├── my_program.c
-    └── my_second_file.c
+    └── sources/
+        ├── another_file.c
+        ├── again.c
+        └── main.c  
 ```
 
 Use this command in your project folder:
