@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/19 16:45:27 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/19 16:54:01 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ char	*ft_append_strs(char *s1, char *s2, t_bool free_s1, t_bool free_s2);
 **	(char *)result.
 **	The duplicated string.
 */
-char	*ft_strndup(const char *str, size_t n, t_bool to_free);
+char	*ft_strndup(const char *str, size_t n, t_bool free_str);
 
 /*
 **	Duplicate string str.

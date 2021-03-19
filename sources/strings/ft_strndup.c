@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 16:51:08 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/27 15:04:43 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/03/19 17:06:50 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strndup(const char *str, size_t n, t_bool to_free)
+char	*ft_strndup(const char *str, size_t n, t_bool free_str)
 {
 	size_t	index;
 	char	*result;
@@ -31,7 +31,7 @@ char	*ft_strndup(const char *str, size_t n, t_bool to_free)
 		index++;
 	}
 	result[index] = 0;
-	if (to_free == TRUE)
-		free((void *)str);
+	if (free_str)
+		free((char *)str);
 	return (result);
 }
