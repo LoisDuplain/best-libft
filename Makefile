@@ -30,9 +30,9 @@ gmk:
 
 norminette: clean
 	@echo " "
-	norminettev2 sources
+	norminette sources
 	@echo " "
-	norminettev2 includes
+	norminette includes
 
 test: $(NAME)
 	@echo "----- MAKEFILE TESTS -----"

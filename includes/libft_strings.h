@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_strings.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/27 15:03:27 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/03/19 16:45:27 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,5 +137,17 @@ char	*ft_strmult_back(	\
 	char *front,			\
 	size_t n,				\
 	t_bool free_front);
+
+/*
+**	Split string char *str on every char contained in string char *charset.
+**	./strings/ft_split.c
+*/
+char	**ft_split(char *str, char *charset);
+
+/*
+**	Free splitted string result.
+**	./strings/ft_free_splitted.c
+*/
+void	ft_free_splitted(char **splitted);
 
 #endif

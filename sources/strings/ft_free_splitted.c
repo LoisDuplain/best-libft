@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf_s_processor.c                               :+:      :+:    :+:   */
+/*   ft_free_splitted_string.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/16 18:47:07 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/19 16:46:21 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/03/19 16:37:12 by lduplain          #+#    #+#             */
+/*   Updated: 2021/03/19 16:37:14 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	s_processor(	\
-	t_printable *prtbl,	\
-	va_list args,		\
-	char **to_print)
+void	ft_free_splitted(char **splitted)
 {
-	char	*value;
-	int		to_dup;
+	int		word_index;
 
-	value = va_arg(args, char *);
-	if (value == NULL)
-		*to_print = ft_strdup("(null)", FALSE);
-	else
-		*to_print = ft_strdup(value, FALSE);
-	if (prtbl->dot)
+	word_index = 0;
+	while (splitted[word_index])
 	{
-		to_dup = ft_min(prtbl->dot_value, ft_strlen(*to_print));
-		*to_print = ft_strndup(*to_print, to_dup, TRUE);
+		free(splitted[word_index]);
+		word_index++;
 	}
+	free(splitted);
 }
