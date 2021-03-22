@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 18:59:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 20:34:52 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 20:37:31 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ char	**ft_get_file_content(char *path)
 		return (ft_destroy_file_content(file_content));
 	line_index = 0;
 	file_content = ft_fill_file_content(file_content, file);
-	if (file_content == NULL)
-		ft_close_file(file);
+	ft_close_file(file);
 	if (file_content == NULL)
 		return (ft_destroy_file_content(file_content));
 	return (file_content);
