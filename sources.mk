@@ -133,6 +133,7 @@ SRCS += sources/strings/ft_ctostr.c
 SRCS += sources/strings/ft_find_char.c
 SRCS += sources/strings/ft_free_splitted.c
 SRCS += sources/strings/ft_split.c
+SRCS += sources/strings/ft_strcmp.c
 SRCS += sources/strings/ft_strcpy.c
 SRCS += sources/strings/ft_strdup.c
 SRCS += sources/strings/ft_strlen.c

@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/19 16:54:01 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 14:23:30 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,5 +149,11 @@ char	**ft_split(char *str, char *charset);
 **	./strings/ft_free_splitted.c
 */
 void	ft_free_splitted(char **splitted);
+
+/*
+**	Compare two strings.
+**	./strings/ft_strcmp.c
+*/
+int		ft_strcmp(char *s1, char *s2);
 
 #endif
