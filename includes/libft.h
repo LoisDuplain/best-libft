@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:49 by lduplain          #+#    #+#             */
-/*   Updated: 2021/01/14 13:09:48 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 20:00:28 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
 # include <limits.h>
 # include <stdarg.h>
 # include <math.h>
+# include <stdio.h>
 
 /*
 **	END STANDARD INCLUDES
