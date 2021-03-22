@@ -73,6 +73,7 @@ SRCS += sources/file/ft_close_file.c
 SRCS += sources/file/ft_count_file_lines.c
 SRCS += sources/file/ft_create_file_content.c
 SRCS += sources/file/ft_destroy_file_content.c
+SRCS += sources/file/ft_fill_file_content.c
 SRCS += sources/file/ft_get_file_content.c
 SRCS += sources/file/ft_open_file.c
 SRCS += sources/file/ft_read_next_line.c

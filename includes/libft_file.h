@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:58:19 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 19:14:26 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 20:32:14 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,5 +116,14 @@ void				*ft_destroy_file_content(char **file_content);
 **	NULL if line duplication failed.
 */
 char				**ft_get_file_content(char *path);
+
+/*
+**	Fill the file content (char **)file_content with the content of file (t_file *)file.
+**	./file/ft_fill_file_content.c
+**	Return:
+**	(char **)file_content.
+**	NULL if failed.
+*/
+char				**ft_fill_file_content(char **file_content, t_file *file);
 
 #endif
