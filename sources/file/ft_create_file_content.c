@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 18:55:13 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 20:38:02 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 20:58:46 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	**ft_create_file_content(char *path)
 	file_lines_count = ft_count_file_lines(path);
 	if (file_lines_count == -1)
 		return (NULL);
-	file_content = ft_calloc((size_t)file_lines_count, sizeof(char *));
+	file_content = ft_calloc((size_t)file_lines_count + 1, sizeof(char *));
 	if (file_content == NULL)
 		return (NULL);
 	line_index = 0;
@@ -30,5 +30,6 @@ char	**ft_create_file_content(char *path)
 		file_content[line_index] = NULL;
 		line_index++;
 	}
+	file_content[line_index] = NULL;
 	return (file_content);
 }
