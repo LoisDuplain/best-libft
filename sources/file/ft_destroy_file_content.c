@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_destroy_file_content.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 16:56:35 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 19:06:45 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/03/22 18:55:47 by lduplain          #+#    #+#             */
+/*   Updated: 2021/03/22 19:04:19 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *str, t_bool free_str)
+void	*ft_destroy_file_content(char **file_content)
 {
-	if (!str)
-		return (NULL);
-	if (free_str == TRUE)
-		return (ft_strndup(str, ft_strlen(str), TRUE));
-	return (ft_strndup(str, ft_strlen(str), FALSE));
+	ft_destroy_splitted(file_content);
+	return (NULL);
 }

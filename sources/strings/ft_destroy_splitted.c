@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_splitted_string.c                          :+:      :+:    :+:   */
+/*   ft_destroy_splitted.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/19 16:37:12 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/19 16:37:14 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/03/22 18:56:49 by lduplain          #+#    #+#             */
+/*   Updated: 2021/03/22 19:04:53 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_free_splitted(char **splitted)
+void	*ft_destroy_splitted(char **splitted)
 {
 	int		word_index;
 
@@ -23,4 +23,5 @@ void	ft_free_splitted(char **splitted)
 		word_index++;
 	}
 	free(splitted);
+	return (NULL);
 }

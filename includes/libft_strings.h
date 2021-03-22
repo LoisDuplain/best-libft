@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 14:23:30 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 19:05:06 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,10 +145,12 @@ char	*ft_strmult_back(	\
 char	**ft_split(char *str, char *charset);
 
 /*
-**	Free splitted string result.
-**	./strings/ft_free_splitted.c
+**	Destroy and free splitted string result.
+**	./strings/ft_destroy_splitted.c
+**	Return:
+**	NULL.
 */
-void	ft_free_splitted(char **splitted);
+void	*ft_destroy_splitted(char **splitted);
 
 /*
 **	Compare two strings.

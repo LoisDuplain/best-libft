@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_file.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:58:19 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 14:15:03 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 19:14:26 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,33 @@ t_bool				ft_close_file(t_file *file);
 **	(ssize_t)number of lines|-1 when read fail.
 */
 ssize_t				ft_count_file_lines(char *path);
+
+/*
+**	Create char** file_content to contain a file content.
+**	./file/ft_create_file_content.c
+**	Return:
+**	(char **)file_content. Every (char *) contained in
+**	(char **)file_content are set to NULL.
+*/
+char				**ft_create_file_content(char *path);
+
+/*
+**	Destroy and free (char **)file_content.
+**	./file/ft_destroy_file_content.c
+**	Return:
+**	NULL.
+*/
+void				*ft_destroy_file_content(char **file_content);
+
+/*
+**	Get the file content located at (char *)path in a (char **)file_content.
+**	./file/ft_get_file_content.c
+**	Return:
+**	(char **)file_content.
+**	NULL if file can't be read (Malloc (t_file) failed, cannont be
+**	opened or something else).
+**	NULL if line duplication failed.
+*/
+char				**ft_get_file_content(char *path);
 
 #endif
