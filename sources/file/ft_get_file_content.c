@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 18:59:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 19:58:07 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/22 20:02:06 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	**ft_get_file_content(char *path)
 	while (ft_read_next_line(file))
 	{
 		puts("ft_get_file_content - g");
-		duplicated_line = ft_strdup(file->readed_line, TRUE);
+		duplicated_line = ft_strdup(file->readed_line, FALSE);
 		puts("ft_get_file_content - h");
 		if (duplicated_line == NULL)
 			ft_close_file(file);
