@@ -136,6 +136,7 @@ SRCS += sources/strings/ft_contains_char.c
 SRCS += sources/strings/ft_ctostr.c
 SRCS += sources/strings/ft_destroy_splitted.c
 SRCS += sources/strings/ft_find_char.c
+SRCS += sources/strings/ft_get_splitted_size.c
 SRCS += sources/strings/ft_split.c
 SRCS += sources/strings/ft_strcmp.c
 SRCS += sources/strings/ft_strcpy.c
