@@ -138,6 +138,7 @@ SRCS += sources/strings/ft_destroy_splitted.c
 SRCS += sources/strings/ft_find_char.c
 SRCS += sources/strings/ft_get_splitted_size.c
 SRCS += sources/strings/ft_split.c
+SRCS += sources/strings/ft_str_endwith.c
 SRCS += sources/strings/ft_strcmp.c
 SRCS += sources/strings/ft_strcpy.c
 SRCS += sources/strings/ft_strdup.c

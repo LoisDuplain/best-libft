@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/23 14:30:06 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/24 16:58:31 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,5 +163,11 @@ size_t	ft_get_splitted_size(char **splitted);
 **	./strings/ft_strcmp.c
 */
 int		ft_strcmp(char *s1, char *s2);
+
+/*
+**	Return true if (char *)str end with (char *)end_with.
+**	./strings/ft_str_endwith.c
+*/
+t_bool	ft_str_endwith(char *str, char *end_with);
 
 #endif
