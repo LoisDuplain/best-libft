@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 16:39:05 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/11 11:11:58 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/24 12:39:55 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 ssize_t	ft_count_file_lines(char *path)
 {
 	t_file			*file;
-	t_read_status	read_status;
 	ssize_t			counter;
+	t_read_status	read_status;
 
 	file = ft_open_file(path, O_RDONLY);
+	if (file == NULL)
+		return (read_fail);
 	counter = 0;
 	read_status = ft_read_next_line(file);
 	while (read_status)
