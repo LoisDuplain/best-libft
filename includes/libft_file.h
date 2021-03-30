@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:58:19 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/22 20:38:33 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/30 08:59:57 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ char				**ft_create_file_content(char *path);
 **	Return:
 **	NULL.
 */
-void				*ft_destroy_file_content(char **file_content);
+void				*ft_destroy_file_content(char ***file_content);
 
 /*
 **	Get the file content located at (char *)path in a (char **)file_content.

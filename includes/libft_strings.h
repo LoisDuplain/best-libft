@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/24 17:21:36 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/30 08:59:18 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,7 +150,7 @@ char	**ft_split(char *str, char *charset);
 **	Return:
 **	NULL.
 */
-void	*ft_destroy_splitted(char **splitted);
+void	*ft_destroy_splitted(char ***splitted);
 
 /*
 **	Get the size of splitted string array.
