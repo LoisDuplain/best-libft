@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 16:51:08 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/31 18:59:22 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/03/31 19:03:34 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,13 @@ char	*ft_strndup(const char *str, size_t n, t_bool free_str)
 
 	if (!str)
 		return (NULL);
-	result = ft_calloc(n + 1, sizeof(char));
+	if (n > ft_strlen(str))
+		n = ft_strlen(str);
+	result = ft_calloc(n + 1, sizeof(*str));
 	if (result == NULL)
 		return (NULL);
-	ft_bzero(result, n);
 	index = 0;
-	while (str[index])
+	while (index < n)
 	{
 		result[index] = str[index];
 		index++;
