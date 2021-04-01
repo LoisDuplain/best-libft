@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 14:52:16 by lduplain          #+#    #+#             */
-/*   Updated: 2021/04/01 10:53:57 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/04/01 11:54:26 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,6 @@ void	fill_words(char *str, char *charset, char **result)
 		while (i < str_len && !ft_contains_char(charset, str[i]))
 			i++;
 		result[word_counter - 1] = ft_strndup(&str[temp], i - temp, FALSE);
-		printf("WC - 1: %d | Start: %zu | End: %zu | STR: {%s}\n", word_counter - 1, temp, i, result[word_counter - 1]);
 	}
 }
 
