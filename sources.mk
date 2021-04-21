@@ -103,6 +103,7 @@ SRCS += sources/math/vector3/div_vector_vector.c
 SRCS += sources/math/vector3/mult_vector_coord.c
 SRCS += sources/math/vector3/mult_vector_value.c
 SRCS += sources/math/vector3/mult_vector_vector.c
+SRCS += sources/math/vector3/normalize_vector.c
 SRCS += sources/math/vector3/rotate_vector.c
 SRCS += sources/math/vector3/rotate_vector_x.c
 SRCS += sources/math/vector3/rotate_vector_y.c
