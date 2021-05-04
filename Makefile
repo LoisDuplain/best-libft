@@ -49,7 +49,6 @@ fclean: clean
 re: fclean all
 
 gmk:
-	@printf "$(BLUE)$(NAME): $(GREEN)Generating Makefile includes.\n$(RESET)"
 	@find sources -name '*.c' | sed 's/^/SOURCES += /' > sources.mk
 	@find includes -name '*.h' | sed 's/^/INCLUDES += /' > includes.mk
 
