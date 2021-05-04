@@ -12,8 +12,11 @@
   </a>
 </p>
 
-best-libft is a sorted and enhanced libft (containing 152 functions with recreated libc functions) useful for 42 projects.
-It's easy to use, created by Loïs Duplain. (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
+<p align="left">
+  best-libft is a sorted and enhanced libft (containing 152 functions with recreated libc functions) useful for 42 projects.
+  <br>
+  It's easy to use, created by Loïs Duplain. (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
+</p>
 
 ## Installation
 
