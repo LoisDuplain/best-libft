@@ -11,6 +11,7 @@ SOURCES += sources/color/color_to_int.c
 SOURCES += sources/color/create_color.c
 SOURCES += sources/color/create_icolor.c
 SOURCES += sources/converter/ft_atoi.c
+SOURCES += sources/converter/ft_llatoi.c
 SOURCES += sources/converter/ft_lltoa_ibase.c
 SOURCES += sources/converter/ft_lowercase_char.c
 SOURCES += sources/converter/ft_natoi.c
