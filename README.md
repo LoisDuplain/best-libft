@@ -3,6 +3,20 @@
 best-libft is a sorted libft (containing recreated libc functions) used for 42 projects.
 Easy to use, created by Loïs Duplain (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
 
+<h1 align="center">🧰 best-libft 📚</h1>
+
+<p align="center">
+  <a href="https://fr.wikipedia.org/wiki/MacOS_Mojave" target="_blank">
+    <img alt="platform: osx 10.14.x" src="https://img.shields.io/badge/platform-osx%20v10.14.x-red?style=flat-square"/>
+  </a>
+  <a href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">
+    <img alt="language: c" src="https://img.shields.io/badge/language-C-purple?style=flat-square"/>
+  </a>
+  <a href="https://profile.intra.42.fr/users/lduplain" target="_blank">
+    <img alt="42 login: lduplain" src="https://img.shields.io/badge/42%20login-lduplain-2DD57B?style=flat-square"/>
+  </a>
+</p>
+
 ## Installation
 
 Clone it in your project like this:
