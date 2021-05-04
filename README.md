@@ -1,8 +1,3 @@
-# best-libft
-
-best-libft is a sorted libft (containing recreated libc functions) used for 42 projects.
-Easy to use, created by Loïs Duplain (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
-
 <h1 align="center">🧰 best-libft 📚</h1>
 
 <p align="center">
@@ -16,6 +11,9 @@ Easy to use, created by Loïs Duplain (42login: lduplain, 42mail: lduplain@stude
     <img alt="42 login: lduplain" src="https://img.shields.io/badge/42%20login-lduplain-2DD57B?style=flat-square"/>
   </a>
 </p>
+
+best-libft is a sorted libft (containing recreated libc functions) used for 42 projects.
+Easy to use, created by Loïs Duplain (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
 
 ## Installation
 
