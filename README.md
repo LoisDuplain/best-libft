@@ -12,8 +12,8 @@
   </a>
 </p>
 
-best-libft is a sorted libft (containing recreated libc functions) used for 42 projects.
-Easy to use, created by Loïs Duplain (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
+best-libft is a sorted and enhanced libft (containing 152 functions with recreated libc functions) useful for 42 projects.
+It's easy to use, created by Loïs Duplain. (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
 
 ## Installation
 
@@ -64,9 +64,6 @@ You can find description usage for every functions in the headers.
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to execute "make end" command and verify everything is ok before push. 
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Copyright
 Loïs Duplain (lduplain) © 2020
