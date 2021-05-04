@@ -13,7 +13,7 @@
 </p>
 
 <p align="left">
-  best-libft is a sorted and enhanced <a href="https://github.com/LoisDuplain/libft">libft</a> (containing 152 functions with recreated libc functions) useful for 42 projects.
+  best-libft is a sorted and enhanced <a href="https://github.com/LoisDuplain/libft">libft</a> (containing 152 functions with recreated libc functions) useful for 42 projects. Containing: libft, gnl, printf and much more.
   <br>
   It's easy to use, created by Loïs Duplain. (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
 </p>
