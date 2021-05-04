@@ -1,7 +1,22 @@
-# best-libft
+<h1 align="center">🧰 best-libft 📚</h1>
 
-best-libft is a sorted libft (containing recreated libc functions) used for 42 projects.
-Easy to use, created by Loïs Duplain (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
+<p align="center">
+  <a href="https://fr.wikipedia.org/wiki/MacOS_Mojave" target="_blank">
+    <img alt="platform: osx 10.14.x" src="https://img.shields.io/badge/platform-osx%20v10.14.x-red?style=flat-square"/>
+  </a>
+  <a href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">
+    <img alt="language: c" src="https://img.shields.io/badge/language-C-purple?style=flat-square"/>
+  </a>
+  <a href="https://profile.intra.42.fr/users/lduplain" target="_blank">
+    <img alt="42 login: lduplain" src="https://img.shields.io/badge/42%20login-lduplain-2DD57B?style=flat-square"/>
+  </a>
+</p>
+
+<p align="left">
+  best-libft is a sorted and enhanced <a href="https://github.com/LoisDuplain/libft">libft</a> (containing 152 functions with recreated libc functions) useful for 42 projects. Containing: libft, gnl, printf and much more.
+  <br>
+  It's easy to use, created by Loïs Duplain. (42login: lduplain, 42mail: lduplain@student.42lyon.fr)
+</p>
 
 ## Installation
 
@@ -17,7 +32,7 @@ Clone it in your project like this:
         └── main.c  
 ```
 
-Use this command in your project folder:
+How to clone best-libft ?
 
 ```bash
 git clone https://github.com/LoisDuplain/best-libft.git
@@ -48,18 +63,8 @@ int     main(void)
 
 You can find description usage for every functions in the headers.
 
-## To add
-
-1.	List functions
-2.	ft_substr.c
-
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to execute "make end" command and verify everything is ok before push. 
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+Evryone can contribute to best-libft. Just send me a mail, i will add you to contributors.
 
 ## Copyright
 Loïs Duplain (lduplain) © 2020
