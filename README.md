@@ -64,9 +64,7 @@ int     main(void)
 You can find description usage for every functions in the headers.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to execute "make end" command and verify everything is ok before push. 
+Evryone can contribute to best-libft. Just send me a mail, i will add you to contributors.
 
 ## Copyright
 Loïs Duplain (lduplain) © 2020
