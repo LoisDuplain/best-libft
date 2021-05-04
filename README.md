@@ -29,7 +29,7 @@ Clone it in your project like this:
         └── main.c  
 ```
 
-Use this command in your project folder:
+How to clone best-libft ?
 
 ```bash
 git clone https://github.com/LoisDuplain/best-libft.git
