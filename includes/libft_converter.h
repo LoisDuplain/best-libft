@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:16:50 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/04 18:06:12 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/05/11 15:35:08 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int			ft_natoi(char *str, size_t n);
 
 /*
 **	Convert string to long long.
-**	./converter/ft_llatoi.c
+**	./converter/ft_atoll.c
 */
-long long	ft_llatoi(char *str);
+long long	ft_atoll(char *str);
 
 /*
 **	Convert unsigned long long number to mallocated string in ibase ibase.

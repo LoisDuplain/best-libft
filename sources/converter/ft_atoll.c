@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_llatoi.c                                        :+:      :+:    :+:   */
+/*   ft_atoll.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/04 18:04:20 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/04 18:06:31 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/05/11 15:34:44 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long	ft_llatoi(char *str)
+long long	ft_atoll(char *str)
 {
 	unsigned long long	result;
 	size_t				i;
