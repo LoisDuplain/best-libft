@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_checker.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 11:12:18 by lduplain          #+#    #+#             */
-/*   Updated: 2020/12/15 12:37:13 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/05/11 16:31:30 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,12 @@ t_bool	is_alpha(char c);
 **	./checker/is_numeric.c
 */
 t_bool	is_numeric(char c);
+
+/*
+**	Check if string str is a number string.
+**	./checker/is_numberstr.c
+*/
+t_bool	is_numberstr(char *str);
 
 /*
 **	Check if character c is alphanumeric.

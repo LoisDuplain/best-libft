@@ -2,6 +2,7 @@ SOURCES += sources/checker/is_alpha.c
 SOURCES += sources/checker/is_alphanumeric.c
 SOURCES += sources/checker/is_ascii.c
 SOURCES += sources/checker/is_lowercase.c
+SOURCES += sources/checker/is_numberstr.c
 SOURCES += sources/checker/is_numeric.c
 SOURCES += sources/checker/is_printable.c
 SOURCES += sources/checker/is_space.c
