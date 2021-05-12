@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_math_vector.h                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 15:08:33 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 14:16:49 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/05/12 12:39:47 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ typedef struct s_vector3
 	float	vx;
 	float	vy;
 	float	vz;
-}t_vector3;
+}	t_vector3;
 /*
 **	END DEFINES
 */

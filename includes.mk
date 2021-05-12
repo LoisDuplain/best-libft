@@ -14,6 +14,7 @@ INCLUDES += includes/libft_display_nbr_ulong.h
 INCLUDES += includes/libft_display_nbr_ulonglong.h
 INCLUDES += includes/libft_display_str.h
 INCLUDES += includes/libft_file.h
+INCLUDES += includes/libft_list.h
 INCLUDES += includes/libft_math.h
 INCLUDES += includes/libft_math_point.h
 INCLUDES += includes/libft_math_pythagore.h

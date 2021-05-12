@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_math.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 14:47:02 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 14:15:23 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/05/12 12:39:44 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct s_interval
 {
 	float	istart;
 	float	istop;
-}t_interval;
+}	t_interval;
 /*
 **	END DEFINES
 */

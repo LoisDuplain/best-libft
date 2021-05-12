@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:58:19 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/30 08:59:57 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/05/12 12:40:02 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,14 @@ typedef struct s_file
 	char	*c_file_path;
 	char	*readed_line;
 	char	*p_backup;
-}t_file;
+}	t_file;
 
 typedef enum e_file_read_status
 {
 	read_success = 1,
 	read_success_eof = 0,
 	read_fail = -1,
-}t_read_status;
+}	t_read_status;
 /*
 **	END DEFINES
 */

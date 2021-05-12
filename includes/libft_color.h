@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 11:25:58 by lduplain          #+#    #+#             */
-/*   Updated: 2021/04/06 13:56:18 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/05/12 12:40:19 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ typedef struct s_color
 	unsigned char	r;
 	unsigned char	g;
 	unsigned char	b;
-}t_color;
+}	t_color;
 /*
 **	END DEFINES
 */

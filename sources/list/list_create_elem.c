@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_boolean.h                                    :+:      :+:    :+:   */
+/*   list_create_elem.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 17:54:11 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/12 12:40:25 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/05/12 12:41:33 by lduplain          #+#    #+#             */
+/*   Updated: 2021/05/12 12:43:18 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_BOOLEAN_H
-# define LIBFT_BOOLEAN_H
+#include "libft.h"
 
-/*
-**	START CUSTOM INCLUDES
-*/
-
-# include "libft.h"
-
-/*
-**	END CUSTOM INCLUDES
-*/
-
-/*
-**	START DEFINES
-*/
-typedef enum e_bool
+t_list	*list_create_elem(void *data)
 {
-	TRUE = 1,
-	FALSE = 0,
-}	t_bool;
-/*
-**	END DEFINES
-*/
+	t_list	*list_elem;
 
-#endif
+	list_elem = ft_calloc(1, sizeof(t_list));
+	if (list_elem == NULL)
+		return (NULL);
+	list_elem->next = NULL;
+	list_elem->data = data;
+	return (list_elem);
+}

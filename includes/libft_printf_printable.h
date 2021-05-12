@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_printf_printable.h                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 13:50:45 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/09 14:18:34 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/05/12 12:39:35 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ typedef struct s_printable
 	int		dot_value;
 	t_bool	zero;
 	int		zero_value;
-}t_printable;
+}	t_printable;
 /*
 **	END DEFINES
 */

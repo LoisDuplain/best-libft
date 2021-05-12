@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_boolean.h                                    :+:      :+:    :+:   */
+/*   list_add_front_new.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/09 17:54:11 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/12 12:40:25 by lduplain         ###   ########lyon.fr   */
+/*   Created: 2021/05/12 12:44:29 by lduplain          #+#    #+#             */
+/*   Updated: 2021/05/12 17:13:38 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_BOOLEAN_H
-# define LIBFT_BOOLEAN_H
+#include "libft.h"
 
-/*
-**	START CUSTOM INCLUDES
-*/
-
-# include "libft.h"
-
-/*
-**	END CUSTOM INCLUDES
-*/
-
-/*
-**	START DEFINES
-*/
-typedef enum e_bool
+void	list_add_front_new(t_list **begin_list, void *data)
 {
-	TRUE = 1,
-	FALSE = 0,
-}	t_bool;
-/*
-**	END DEFINES
-*/
-
-#endif
+	list_add_front_elem(begin_list, list_create_elem(data));
+}
