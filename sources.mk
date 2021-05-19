@@ -88,6 +88,7 @@ SOURCES += sources/list/list_clear.c
 SOURCES += sources/list/list_create_elem.c
 SOURCES += sources/list/list_get.c
 SOURCES += sources/list/list_last.c
+SOURCES += sources/list/list_remove.c
 SOURCES += sources/list/list_size.c
 SOURCES += sources/math/create_interval.c
 SOURCES += sources/math/ft_abs.c

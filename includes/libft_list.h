@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 12:37:18 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/13 14:40:44 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/05/19 18:06:00 by lduplain         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,12 +83,18 @@ t_list	*list_last(t_list *begin_list);
 **	Clear list starting by (t_list *)begin_list.
 **	./list/list_clear.c
 */
-void	list_clear(t_list *begin_list, void (free_fct)(void *));
+void	list_clear(t_list *begin_list, void (*free_fct)(void *));
 
 /*
 **	Get element at index (int)index in list starting by (t_list *)begin_list.
 **	./list/list_get.c
 */
 t_list	*list_get(t_list *begin_list, int index);
+
+/*
+**	Remove in list (t_list **)begin_list element at index (int)index.
+**	./list/list_remove.c
+*/
+void	list_remove(t_list **begin_list, void (*free_fct)(void *), int index);
 
 #endif
