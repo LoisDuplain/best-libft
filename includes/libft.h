@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:49 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/12 12:42:10 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/06/01 14:25:34 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@
 # include "./libft_printf.h"
 # include "./libft_color.h"
 # include "./libft_list.h"
+# include "./libft_sort.h"
 
 /*
 **	END CUSTOM INCLUDES

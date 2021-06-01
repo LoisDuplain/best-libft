@@ -26,4 +26,5 @@ INCLUDES += includes/libft_printf_checker.h
 INCLUDES += includes/libft_printf_parser.h
 INCLUDES += includes/libft_printf_printable.h
 INCLUDES += includes/libft_printf_processor.h
+INCLUDES += includes/libft_sort.h
 INCLUDES += includes/libft_strings.h

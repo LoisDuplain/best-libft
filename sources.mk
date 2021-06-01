@@ -145,6 +145,7 @@ SOURCES += sources/printf/process/processor/printf_diuxx_processor.c
 SOURCES += sources/printf/process/processor/printf_p_processor.c
 SOURCES += sources/printf/process/processor/printf_pcrt_processor.c
 SOURCES += sources/printf/process/processor/printf_s_processor.c
+SOURCES += sources/sort/quick_sort.c
 SOURCES += sources/strings/ft_append_strs.c
 SOURCES += sources/strings/ft_contains_char.c
 SOURCES += sources/strings/ft_ctostr.c
