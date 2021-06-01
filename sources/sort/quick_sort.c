@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 14:19:27 by lduplain          #+#    #+#             */
-/*   Updated: 2021/06/01 14:25:07 by lduplain         ###   ########.fr       */
+/*   Updated: 2021/06/01 16:55:49 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,16 @@ static void	swap_values(int array[], int index_a, int index_b)
 	array[index_b] = temp;
 }
 
-void	quick_sort(int array[], int start, int end)
+void	quick_sort(int array[], int index_start, int index_end)
 {
 	int	left;
 	int	right;
 	int	pivot;
 
-	left = start - 1;
-	right = end + 1;
-	pivot = array[start];
-	if (start >= end)
+	left = index_start - 1;
+	right = index_end + 1;
+	pivot = array[index_start];
+	if (index_start >= index_end)
 		return ;
 	while (1)
 	{
@@ -43,6 +43,6 @@ void	quick_sort(int array[], int start, int end)
 		else
 			break ;
 	}
-	quick_sort(array, start, right);
-	quick_sort(array, right + 1, end);
+	quick_sort(array, index_start, right);
+	quick_sort(array, right + 1, index_end);
 }
