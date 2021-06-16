@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_strings.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/30 08:59:18 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/06/16 15:47:48 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,5 +169,34 @@ int		ft_strcmp(char *s1, char *s2);
 **	./strings/ft_str_endwith.c
 */
 t_bool	ft_str_endwith(char *str, char *end_with);
+
+/*
+**	Return appended string (char *)str with char c.
+**	./strings/ft_append_char_to_str.c
+**	Return NULL if calloc failed.
+*/
+char	*ft_append_char_to_str(char *str, char c);
+
+/*
+**	Return string array length.
+**	./strings/ft_get_string_array_length.c
+*/
+size_t	ft_get_string_array_length(char **string_array);
+
+/*
+**	Return (char **)str_array ended by (char *)str.
+**	./strings/ft_add_str_to_str_array.c
+**	Return NULL if calloc failed.
+*/
+char	**ft_add_str_to_str_array(char **str_array, char *str,
+			t_bool free_array);
+
+/*
+**	Destroy and free string array.
+**	./strings/ft_destroy_string_array.c
+**	Return:
+**	NULL.
+*/
+void	*ft_destroy_string_array(char ***string_array);
 
 #endif
