@@ -164,6 +164,7 @@ SOURCES += sources/strings/ft_strdup.c
 SOURCES += sources/strings/ft_strlen.c
 SOURCES += sources/strings/ft_strmult_back.c
 SOURCES += sources/strings/ft_strmult_front.c
+SOURCES += sources/strings/ft_strncmp.c
 SOURCES += sources/strings/ft_strndup.c
 SOURCES += sources/strings/ft_tolower.c
 SOURCES += sources/strings/ft_toupper.c
