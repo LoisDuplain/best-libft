@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 13:55:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/09/23 15:38:05 by lduplain         ###   ########.fr       */
+/*   Updated: 2021/10/05 13:45:35 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -204,5 +204,13 @@ char	**ft_add_str_to_str_array(char **str_array, char *str,
 **	NULL.
 */
 void	*ft_destroy_string_array(char ***string_array);
+
+/*
+**	Copy (char **)str_array to a new allocated string array.
+**	./strings/copy_str_array.c
+**	Return:
+**	Copied str_array.
+*/
+char	**copy_str_array(char **str_array);
 
 #endif
