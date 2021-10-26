@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lltoa_ibase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:40:15 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/08 10:56:10 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/10/26 16:19:35 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,8 @@ char	*ft_lltoa_ibase(long long number, int base, t_bool uppercase)
 {
 	char	*result;
 
-	if (number > 0)
-		return (ft_ulltoa_ibase((unsigned long long)number, base, uppercase));
-	result = ft_append_strs("-", ft_ulltoa_ibase((unsigned long long)
-				- number, base, uppercase),
-			FALSE,
-			TRUE);
-	return (result);
+	result = ft_ulltoa_ibase((unsigned long long)number, base, uppercase);
+	if (number >= 0)
+		return (result);
+	return (ft_append_strs("-", result, FALSE, TRUE));
 }
