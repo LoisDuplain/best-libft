@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ulltoa_ibase.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 10:41:12 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/27 15:08:37 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/11/03 12:57:24 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_ulltoa_ibase(unsigned long long number, int ibase,	\
 	result = 0;
 	length = 0;
 	if (number == 0)
-		return (ft_strdup("0", FALSE));
+		return (ft_strdup("0"));
 	length = ft_ull_ibase_length(number, ibase);
 	result = malloc(sizeof(char) * (length + 1));
 	if (!result)

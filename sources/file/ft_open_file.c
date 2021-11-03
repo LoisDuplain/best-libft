@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_open_file.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 12:23:00 by lduplain          #+#    #+#             */
-/*   Updated: 2021/05/04 17:42:37 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/11/03 12:58:13 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ t_file	*ft_open_file(const char *path, int open_flag)
 		return (NULL);
 	}
 	file->c_fd = fd;
-	file->c_file_path = ft_strdup(path, FALSE);
+	file->c_file_path = ft_strdup(path);
 	file->readed_line = 0;
 	file->p_backup = 0;
 	return (file);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_fill_file_content.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 20:23:55 by lduplain          #+#    #+#             */
-/*   Updated: 2021/04/01 11:54:41 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/11/03 12:57:56 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ char	**ft_fill_file_content(char **file_content, t_file *file)
 	line_index = 0;
 	while (ft_read_next_line(file))
 	{
-		duplicated_line = ft_strdup(file->readed_line, FALSE);
+		duplicated_line = ft_strdup(file->readed_line);
 		if (duplicated_line == NULL)
 			return (NULL);
 		file_content[line_index] = duplicated_line;
 		line_index++;
 	}
-	duplicated_line = ft_strdup(file->readed_line, FALSE);
+	duplicated_line = ft_strdup(file->readed_line);
 	if (duplicated_line == NULL)
 		return (NULL);
 	file_content[line_index] = duplicated_line;

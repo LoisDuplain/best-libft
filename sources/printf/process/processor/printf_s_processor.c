@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   printf_s_processor.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lduplain <lduplain@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 18:47:07 by lduplain          #+#    #+#             */
-/*   Updated: 2021/03/19 16:46:21 by lduplain         ###   ########lyon.fr   */
+/*   Updated: 2021/11/03 12:59:03 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void	s_processor(	\
 
 	value = va_arg(args, char *);
 	if (value == NULL)
-		*to_print = ft_strdup("(null)", FALSE);
+		*to_print = ft_strdup("(null)");
 	else
-		*to_print = ft_strdup(value, FALSE);
+		*to_print = ft_strdup(value);
 	if (prtbl->dot)
 	{
 		to_dup = ft_min(prtbl->dot_value, ft_strlen(*to_print));
