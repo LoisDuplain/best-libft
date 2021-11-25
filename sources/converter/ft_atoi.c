@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faherrau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 18:01:07 by lduplain          #+#    #+#             */
-/*   Updated: 2021/02/08 10:51:28 by faherrau         ###   ########lyon.fr   */
+/*   Updated: 2021/11/25 13:38:17 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@ int	ft_atoi(char *str)
 {
 	unsigned int	result;
 	size_t			i;
-	int				is_negative;
+	int				sign;
 
 	i = 0;
 	result = 0;
-	is_negative = 1;
+	sign = 1;
 	while (str[i] && is_whitespace(str[i]))
 		i++;
 	while (str[i] && (str[i] == '-' || str[i] == '+'))
 	{
 		if (str[i] == '-')
-			is_negative *= -1;
+			sign *= -1;
 		i++;
 	}
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
@@ -34,5 +34,8 @@ int	ft_atoi(char *str)
 		result = result * 10 + str[i] - '0';
 		i++;
 	}
-	return ((int)result * is_negative);
+	if ((sign == 1 && result > (unsigned int)(INT_MAX))
+		|| (sign == -1 && result > (unsigned int)(INT_MAX) + 1))
+		errno = ERANGE;
+	return ((int)result * sign);
 }

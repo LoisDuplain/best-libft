@@ -6,7 +6,7 @@
 /*   By: lduplain <lduplain@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:49 by lduplain          #+#    #+#             */
-/*   Updated: 2021/06/01 14:25:34 by lduplain         ###   ########.fr       */
+/*   Updated: 2021/11/25 13:35:58 by lduplain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 # include <stdarg.h>
 # include <math.h>
 # include <stdio.h>
+# include <errno.h>
 
 /*
 **	END STANDARD INCLUDES
